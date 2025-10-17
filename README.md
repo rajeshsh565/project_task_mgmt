@@ -15,6 +15,12 @@ This is a full-stack project management application that allows users to create 
 
 ## Setup Instructions
 
+### Clone Repository
+
+```bash
+git clone https://github.com/rajeshsh565/project_task_mgmt
+```
+
 ### Development Environment
 
 1.  Run the following command in the root directory to install all necessary packages for both the server and the client:
