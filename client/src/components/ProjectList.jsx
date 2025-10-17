@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { EditIcon, DeleteIcon } from '../utils/icons.jsx';
 import { useAppContext } from '../context/AppContext';
+import LoadingView from '../utils/LoadingView.jsx';
 
 const ProjectList = () => {
   const { handleEditProject, projects, setProjects} = useAppContext();
@@ -18,7 +19,11 @@ const ProjectList = () => {
     }
   };
 
-  if (projects.length === 0) {
+  if(!projects) {
+    return <LoadingView/>
+  }
+
+  if (projects?.length === 0) {
     return (
       <div className="h-full flex flex-col items-center justify-center text-center">
         <h2 className="text-2xl text-gray-500 mb-4 select-none">No projects found.</h2>

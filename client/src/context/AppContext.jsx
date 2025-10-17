@@ -14,7 +14,7 @@ export const AppProvider = ({ children }) => {
   const [isTaskModalOpen, setTaskModalOpen] = useState(false);
   const [editingTask, setEditingTask] = useState(null);
   const [taskToUpdate, setTaskToUpdate] = useState(null);
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState(null);
 
   const location = useLocation();
   const navigate = useNavigate();

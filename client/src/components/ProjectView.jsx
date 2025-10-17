@@ -4,6 +4,7 @@ import axios from 'axios';
 import KanbanBoard from './KanbanBoard';
 import AIComponent from './AIComponent';
 import { BackIcon } from '../utils/icons';
+import LoadingView from '../utils/LoadingView';
 
 const ProjectView = () => {
   const { id } = useParams();
@@ -28,7 +29,7 @@ const ProjectView = () => {
   }, [id]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <LoadingView/>
   }
 
   if (error) {

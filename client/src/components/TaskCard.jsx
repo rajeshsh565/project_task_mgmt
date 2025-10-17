@@ -32,10 +32,10 @@ const TaskCard = ({ task, index, onTaskDeleted }) => {
           <div className="flex justify-between items-center">
             <p className="text-xs text-gray-400">Created: {new Date(task.createdAt).toLocaleDateString()}</p>
             <div className="flex space-x-2">
-              <button onClick={() => handleEditTask(task)} className="text-gray-400 hover:text-white">
+              <button onClick={() => handleEditTask(task)} className="text-gray-400 hover:text-white cursor-pointer">
                 <EditIcon />
               </button>
-              <button onClick={handleDelete} className="text-gray-400 hover:text-red-500">
+              <button onClick={handleDelete} className="text-gray-400 hover:text-red-500 cursor-pointer">
                 <DeleteIcon />
               </button>
             </div>
