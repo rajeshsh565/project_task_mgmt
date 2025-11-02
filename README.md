@@ -11,7 +11,7 @@ This is a full-stack project management application that allows users to create 
 
 ## Live Site
 
-<a href="https://proj-mgmt.servehttp.com" target="_blank">Project & Task Management System</a>
+<a href="https://project-task-mgmt.onrender.com/" target="_blank">Project & Task Management System</a>
 
 ## Setup Instructions
 
@@ -50,7 +50,6 @@ If you are deploying to a cloud instance like AWS EC2/GCP VMs/Droplets etc, you 
 
 Create a `.env` file in the root of the project directory. If you are using a hosting service like Vercel or Render, you can add these environment variables in their respective settings.
 
--   `NODE_ENV`: Current setup environment (e.g., `development`, `production`)
 -   `PORT`: The port on which the server will run (e.g., `3000`).
 -   `MONGO_URI`: The connection string for your MongoDB database.
 -   `GEMINI_API_KEY`: Your API key for the Gemini API.
